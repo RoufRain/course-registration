@@ -1,0 +1,27 @@
+.body-container{
+    display: flex;
+    justify-content: ;
+}
+
+.card-container{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.info{
+    display: flex;
+    gap: 10px;
+}
+
+.card{
+    height: auto;
+    width: 300px;
+    border: 2px solid;
+}
+
+
+.card-btn{
+    background-color: aqua;
+}

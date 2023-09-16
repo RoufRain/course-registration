@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/bvhzcC3/Rectangle-2.png",
+      "title": "Introduction to OOP Python",
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": "$19.99",
+      "credit": "Earn 50 credits",
+      "isBookmarked": false,
+      "isSelected": false
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/8mmSMzr/Rectangle-2-1.png",
+      "title": "Product 2",
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": "$29.99",
+      "credit": "Earn 60 credits",
+      "isBookmarked": true,
+      "isSelected": false
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/TKhSy4G/Rectangle-2-2.png",
+      "title": "Product 3",
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": "$24.99",
+      "credit": "Earn 55 credits",
+      "isBookmarked": false,
+      "isSelected": false
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/RyHvc7s/Rectangle-2-3.png",
+      "title": "Product 4",
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": "$39.99",
+      "credit": "Earn 70 credits",
+      "isBookmarked": true,
+      "isSelected": false
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/kJHVvy4/Rectangle-2-4.png",
+      "title": "Product 5",
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": "$15.99",
+      "credit": "Earn 45 credits",
+      "isBookmarked": false,
+      "isSelected": false
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/Bgn06jf/Rectangle-2-5.png",
+      "title": "Product 6",
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": "$49.99",
+      "credit": "Earn 75 credits",
+      "isBookmarked": false,
+      "isSelected": false
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co/pXPY30Q/Rectangle-2-6.png",
+      "title": "Product 7",
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": "$34.99",
+      "credit": "Earn 65 credits",
+      "isBookmarked": true,
+      "isSelected": false
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/wCMwTVr/Rectangle-3.png",
+      "title": "Product 8",
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": "$22.99",
+      "credit": "Earn 58 credits",
+      "isBookmarked": false,
+      "isSelected": false
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co/M1XRpCB/Rectangle-3-1.png",
+      "title": "Product 9",
+      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": "$27.99",
+      "credit": "Earn 62 credits",
+      "isBookmarked": false,
+      "isSelected": false
+    }
+  ]
+  
