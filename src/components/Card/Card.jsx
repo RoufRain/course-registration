@@ -11,7 +11,7 @@ const Card = () => {
     const [allData, setAllData]  = useState([]);
     const [selectedData, setSelectedData] = useState([]);
 
-    const [remainingCredit, setRemainingCredit] = useState(0);
+    const [remainingCredit, setRemainingCredit] = useState(20);
     const [totalCredit, setTotalCredit] = useState(0);
     const [totalPrice, setTotalPrice] = useState(0);
 
@@ -81,7 +81,7 @@ const Card = () => {
                         {data.details}
                         </p>
                         <div className="info">
-                            
+
                             <p><span ><img className='icon-image' src="Asset/dollar-sign 1.svg" alt="" /></span>  price:{data.price} </p>
                             <p><span ><img className='icon-image' src="
                             Asset/Frame (3).svg" alt="" /></span>  credit:{data.credit}hr</p>
