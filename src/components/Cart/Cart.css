@@ -1,8 +1,25 @@
 
 .cart-container{
     width: 300px;
-    background-color: blue;
-    border: 2px solid ;
+    background-color: white;
+    
     height: auto;
+    border-radius: 15px;
+    padding: 20px;
+    color: rgba(28, 27, 27, 0.80);
+
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
    
+}
+
+.remaining-hour{
+    color: blue;
+    font-weight: bold;
+}
+.course-name{
+    font-weight: bold;
 }

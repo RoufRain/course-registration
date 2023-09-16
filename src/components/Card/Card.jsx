@@ -1,10 +1,20 @@
 /* eslint-disable react/jsx-key */
+// import {toast} from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+// toast.configure()
+
 import React, { useEffect, useState } from 'react';
 import './Card.css';
 import Cart from '../Cart/Cart';
 
 const Card = () => {
     const [allData, setAllData]  = useState([]);
+    const [selectedData, setSelectedData] = useState([]);
+
+    const [remainingCredit, setRemainingCredit] = useState(0);
+    const [totalCredit, setTotalCredit] = useState(0);
+    const [totalPrice, setTotalPrice] = useState(0);
+
 
 
     useEffect( () => {
@@ -13,31 +23,77 @@ const Card = () => {
         .then((data) => setAllData(data));
     },[]);
 
-    // console.log(allData);
+    const handleSelect = (data) =>{
+        const isExist = selectedData.find((id) => id.id == data.id);
+        let count = data.credit;
+        let sum = data.price;
+
+        if(isExist) {
+            return alert("This course already selected!");
+        }
+        else{
+
+            selectedData.forEach((item)=>{
+                count = count + item.credit;
+            });
+
+            selectedData.forEach((price) => {
+                sum = sum + price.price;
+            });
+           
+            setTotalPrice(totalPrice);
+
+
+            const remainingCredit = 20 - count;
+            if(count > 20){
+                return alert('r hobe na');
+            }
+            else{
+                setTotalCredit(count);
+                setRemainingCredit(remainingCredit);
+                
+                setSelectedData([...selectedData, data]);
+            }
+
+            
+           
+        }
+        
+        
+    } 
+    //  console.log(selectedData);
+
+
     return (
         <div className='container'>
+            <h1 className='heading'>Course Registration</h1>
+
             <div className='body-container'>
+            
+
                 <div className='card-container'>
                  {allData.map((data) =>  ( 
                         <div key={data.id} className="card">
-                        <img src={data.image} alt="" />
+                        <img className='picture' src={data.image} alt="" />
 
-                        <h2>{data.title}</h2>
-                        <p>
+                        <h2 className='title-text'>{data.title}</h2>
+                        <p className='info'>
                         {data.details}
                         </p>
                         <div className="info">
-                        <p>price:{data.price} </p>
-                        <p>bookmark:</p>
+                            
+                            <p><span ><img className='icon-image' src="Asset/dollar-sign 1.svg" alt="" /></span>  price:{data.price} </p>
+                            <p><span ><img className='icon-image' src="
+                            Asset/Frame (3).svg" alt="" /></span>  credit:{data.credit}hr</p>
                         </div>
-                        <button className="card-btn">Select</button>
+                        <button onClick={()=>handleSelect(data)} className="card-btn">Select</button>
                   </div>
                    ))}
                  
                 </div>
 
                 <div className=''>
-                    <Cart></Cart>
+                    <Cart selectedData={selectedData}remainingCredit={remainingCredit} totalCredit={totalCredit} totalPrice={totalPrice} ></Cart>
                 </div>
                 
             </div>

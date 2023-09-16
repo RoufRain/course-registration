@@ -1,27 +1,66 @@
+.container{
+    background-color: #F3F3F3;
+}
+.heading{
+    text-align: center;
+    
+    color: #1C1B1B;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
 .body-container{
     display: flex;
-    justify-content: ;
+    
+    width: 1400px;
+    margin: auto;
+   
+    
+    
 }
 
 .card-container{
-    width: 1000px;
+    
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     
+   
+    
+}
+.picture{
+    width: 320px;
 }
 .info{
     display: flex;
-    gap: 10px;
+    gap: 50px;
+    font-size: 18px;
+    justify-items: center;
+}
+.title-text{
+    font-size: 23px;
 }
 
 .card{
+    background-color: white;
+    align-items: center;
     height: auto;
-    width: 300px;
-    border: 2px solid;
+    width: 320px;
+    padding: 7px;
+    border-radius: 5px;
 }
 
-
+.icon-image{
+    height: 20px;
+    width: 20px;
+}
 .card-btn{
-    background-color: aqua;
+    background-color: blue;
+    color: white;
+    width: 320px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
 }
