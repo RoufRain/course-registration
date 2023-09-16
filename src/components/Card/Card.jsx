@@ -2,7 +2,7 @@
 // import {toast} from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 // toast.configure()
-
+import swal from 'sweetalert';
 import React, { useEffect, useState } from 'react';
 import './Card.css';
 import Cart from '../Cart/Cart';
@@ -46,7 +46,7 @@ const Card = () => {
 
             const remainingCredit = 20 - count;
             if(count > 20){
-                return alert('r hobe na');
+                return swal('Can not select course over 20 credit!' );
             }
             else{
                 setTotalCredit(count);
@@ -82,9 +82,10 @@ const Card = () => {
                         </p>
                         <div className="info">
 
-                            <p><span ><img className='icon-image' src="Asset/dollar-sign 1.svg" alt="" /></span>  price:{data.price} </p>
-                            <p><span ><img className='icon-image' src="
-                            Asset/Frame (3).svg" alt="" /></span>  credit:{data.credit}hr</p>
+                            <p className='price-credit'><span ><img className='icon-image' src="Asset/dollar-sign 1.svg" alt="" /></span>  price: {data.price} </p>
+
+                            <p className='price-credit'><span ><img className='icon-image' src="
+                            Asset/Frame (3).svg" alt="" /></span>  credit: {data.credit}hr</p>
                         </div>
                         <button onClick={()=>handleSelect(data)} className="card-btn">Select</button>
                   </div>
