@@ -2,6 +2,8 @@
 // import {toast} from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 // toast.configure()
+import { BsBookmark } from 'react-icons/bs';
+import {  BiDollar } from 'react-icons/bi';
 import swal from 'sweetalert';
 import React, { useEffect, useState } from 'react';
 import './Card.css';
@@ -82,12 +84,12 @@ const Card = () => {
                         </p>
                         <div className="info">
 
-                            <p className='price-credit'><span ><img className='icon-image' src="Asset/dollar-sign 1.svg" alt="" /></span>  price: {data.price} </p>
+                            <p className='price-credit'><BiDollar size={18}></BiDollar> price: {data.price} </p>
 
-                            <p className='price-credit'><span ><img className='icon-image' src="
-                            Asset/Frame (3).svg" alt="" /></span>  credit: {data.credit}hr</p>
+                            <p className='price-credit'> <BsBookmark size={18}></BsBookmark> credit: {data.credit}hr</p>
                         </div>
                         <button onClick={()=>handleSelect(data)} className="card-btn">Select</button>
+                        
                   </div>
                    ))}
                  
