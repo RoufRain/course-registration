@@ -93,7 +93,7 @@ const Card = () => {
                  
                 </div>
 
-                <div className=''>
+                <div >
                     <Cart selectedData={selectedData}remainingCredit={remainingCredit} totalCredit={totalCredit} totalPrice={totalPrice} ></Cart>
                 </div>
                 

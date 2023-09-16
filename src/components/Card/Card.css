@@ -1,6 +1,7 @@
 .container{
     background-color: #F3F3F3;
     margin-top: 0px;
+    padding-top: 10px;
 }
 .heading{
     margin-top: 20px;
@@ -16,8 +17,9 @@ line-height: normal;
 .body-container{
     display: flex;
     
-    width: 1400px;
+    /* width: 1400px; */
     margin: auto;
+    padding: 50px;
  
 }
 
@@ -30,6 +32,7 @@ line-height: normal;
 .card-container{
     
     display: flex;
+    
     flex-wrap: wrap;
     gap: 15px;
     
